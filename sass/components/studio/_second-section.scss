@@ -1,0 +1,44 @@
+// Вторая секция
+
+.section--second {
+  padding-bottom: 94px;
+}
+
+.section__services {
+  display: flex;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.section__item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.section__item--width {
+  position: relative;
+  width: calc((100% - 60px) / 3);
+}
+
+.section__img {
+  display: block;
+}
+
+.section__label {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(48, 48, 58, 0.8);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
