@@ -1,4 +1,4 @@
-// Четвертая секция
+
 
 .section-fourth {
   padding-top: 60px;
@@ -12,7 +12,19 @@
 
 .section-fourth__title {
   @extend %section-title;
+
+  @media screen and (min-width: 1200px) {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 42px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      margin-bottom: 50px;
+    }
 }
+
 
 .section-fourth__clients {
   display: flex;

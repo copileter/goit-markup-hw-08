@@ -1,4 +1,4 @@
-// Навигация общая
+
 
 .container__nav {
   position: relative;
@@ -11,7 +11,7 @@
 }
 
 
-// Навигация "Студия / Портфолио / Контакты"
+
 
 .navigation {
   letter-spacing: $secondary-letter-spacing;
@@ -74,7 +74,7 @@
 }
 
 
-// Делаем полосу под "Студия" / "Портфолио" при ховере
+
 
 @media screen and (min-width: 768px) {
   .navigation__item--strip {

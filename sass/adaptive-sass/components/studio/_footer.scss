@@ -1,4 +1,4 @@
-// Футер
+
 
 .footer {
   padding-top: 60px;
@@ -14,9 +14,11 @@
     }
 
     @media screen and (min-width: 1200px) {
+      padding-top: 0;
       flex-wrap: nowrap;
       align-items: baseline;
       text-align: start;
+      
     }
   }
 }

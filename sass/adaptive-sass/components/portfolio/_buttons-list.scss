@@ -24,6 +24,8 @@
 .portfolio-section__item {
   display: inline-block;
 
+  
+
   @media screen and (max-width: 479.98px) {
     &:nth-child(-n+3) {
       margin-bottom: 7px;
@@ -48,11 +50,12 @@
     &:nth-child(-n+3) {
       margin-bottom: 15px;
   }
+}
 
-    @media screen and (min-width: 768px) {
-      margin-bottom: 0;
-    }
-  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+}
+
 }
 
 .portfolio-section__button {
