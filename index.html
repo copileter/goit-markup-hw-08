@@ -7,46 +7,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WebStudio</title>
 
-  <link rel="stylesheet" href="./css/main.min.css">
-
+  <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
-<body>
+<body data-body>
   <header class="page-header">
     <div class="container page-header__container">
       <nav class="container__nav">
         <a href="./index.html" class="container__logo">Web<span class="container__accent">Studio</span></a>
 
-        <ul class="navigation navigation--list">
-          <li class="navigation__item navigation__item--strip "><a href=""
-              class="navigation__link navigation__link--current">Студия</a></li>
-          <li class="navigation__item"><a href="./portfolio.html" class="navigation__link">Портфолио</a></li>
-          <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
-        </ul>
+
+
+        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+          <svg class="menu-button__svg" width="40" height="40" aria-label="Переключательно мобильного меню">
+            <use class="icon-cross" href="./images/mobile_menu.svg#icon-cross_menu"></use>
+            <use class="icon-burger" href="./images/mobile_menu.svg#icon-burger_menu"></use>
+          </svg>
+        </button>
+
+        <div class="menu-container" id="menu-container" data-menu>
+          <ul class="navigation">
+            <li class="navigation__item navigation__item--strip">
+              <a href="" class="navigation__link navigation__link--current">Студия</a>
+            </li>
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="navigation__link">Портфолио</a>
+            </li>
+            <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
+          </ul>
+
+          <div class="contact-container">
+            <ul class="contact">
+              <li class="contact__item">
+                <div class="contact__icon">
+                  <a href="mailto:info@devstudio.com" class="contact__link contact__link--mail">
+                    <svg width="16" height="12" class="contact__svg contact__svg--envelope">
+                      <use href="./images/phone-env.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com</a>
+                </div>
+              </li>
+              <li class="contact__item">
+                <div class="contact__icon">
+                  <a href="tel:+380961111111" class="contact__link contact__link--phone">
+                    <svg width="10" height="16" class="contact__svg contact__svg--phone">
+                      <use href="./images/phone-env.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11</a>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="mobile-networks">
+              <li class="mobile-networks__item">
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                  class="mobile-networks__link">Instagram</a>
+              </li>
+              <li class="mobile-networks__item">
+                <a href="https://twitter.com/" target="_blank" rel="noopener" class="mobile-networks__link">Twitter</a>
+              </li>
+              <li class="mobile-networks__item">
+                <a href="https://uk-ua.facebook.com/" target="_blank" rel="noopener"
+                  class="mobile-networks__link">Facebook</a>
+              </li>
+              <li class="mobile-networks__item">
+                <a href="https://ru.linkedin.com/" target="_blank" rel="noopener"
+                  class="mobile-networks__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-
-      <ul class="contact contact--list">
-        <li class="contact__item">
-
-          <div class="contact__icon">
-            <a href="mailto:info@devstudio.com" class="contact__link">
-              <svg width="16" height="12" class="contact__svg">
-                <use href="./images/phone-env.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a>
-          </div>
-        </li>
-        <li class="contact__item">
-
-          <div class="contact__icon">
-            <a href="tel:+380961111111" class="contact__link">
-              <svg width="10" height="16" class="contact__svg">
-                <use href="./images/phone-env.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a>
-          </div>
-        </li>
-      </ul>
     </div>
   </header>
 
@@ -60,51 +91,51 @@
     </section>
 
 
-    <section class="section section--first">
+    <section class="section-first">
       <div class="container">
         <h2 class="visually-hidden">Преимущества</h2>
-        <ul class="section__feature">
-          <li class="section__item">
-            <div class="section__icon">
+        <ul class="section-first__feature">
+          <li class="section-first__item">
+            <div class="section-first__icon">
               <svg width="70" height="70">
                 <use href="./images/icons.svg#icon-antenna"></use>
               </svg>
             </div>
-            <h3 class="section__title section__title--fontsize">Внимание к деталям</h3>
-            <p class="section__text">
+            <h3 class="section-first__title">Внимание к деталям</h3>
+            <p class="section-first__text">
               Идейные соображения, а также начало повседневной работы по формированию позиции.
             </p>
           </li>
-          <li class="section__item">
-            <div class="section__icon">
+          <li class="section-first__item">
+            <div class="section-first__icon">
               <svg width="70" height="70">
                 <use href="./images/icons.svg#icon-clock"></use>
               </svg>
             </div>
-            <h3 class="section__title section__title--fontsize">Пунктуальность</h3>
-            <p class="section__text">
+            <h3 class="section-first__title">Пунктуальность</h3>
+            <p class="section-first__text">
               Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
             </p>
           </li>
-          <li class="section__item">
-            <div class="section__icon">
+          <li class="section-first__item">
+            <div class="section-first__icon">
               <svg width="70" height="70">
                 <use href="./images/icons.svg#icon-diagram"></use>
               </svg>
             </div>
-            <h3 class="section__title section__title--fontsize">Планирование</h3>
-            <p class="section__text">
+            <h3 class="section-first__title">Планирование</h3>
+            <p class="section-first__text">
               Равным образом консультация с широким активом в значительной степени обуславливает.
             </p>
           </li>
-          <li class="section__item">
-            <div class="section__icon">
+          <li class="section-first__item">
+            <div class="section-first__icon">
               <svg width="70" height="70">
                 <use href="./images/icons.svg#icon-astronaut"></use>
               </svg>
             </div>
-            <h3 class="section__title section__title--fontsize">Современные технологии</h3>
-            <p class="section__text">
+            <h3 class="section-first__title">Современные технологии</h3>
+            <p class="section-first__text">
               Значимость этих проблем настолько очевидна, что реализация плановых заданий.
             </p>
           </li>
@@ -113,25 +144,37 @@
     </section>
 
 
-    <section class="section section--second">
+    <section class="section-second">
       <div class="container">
-        <h2 class="section__title">Чем мы занимаемся</h2>
-        <ul class="section__services">
-          <li class="section__item section__item--width">
-            <img class="section__img" src="./images/jpg/box1.jpg" alt="Вид услуги" width="370" />
-            <div class="section__label">
+        <h2 class="section-second__title">Чем мы занимаемся</h2>
+        <ul class="section-second__services">
+          <li class="section-second__item">
+            <picture>
+              <source srcset="./images/jpg/service/box1.jpg 1x, ./images/jpg/service/box1@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <img class="section-second__img" src="./images/jpg/service/box1.jpg" alt="Вид услуги" width="370" />
+            </picture>
+            <div class="section-second__label">
               <p>Десктопные приложения</p>
             </div>
           </li>
-          <li class="section__item section__item--width">
-            <img class="section__img" src="./images/jpg/box2.jpg" alt="Вид услуги" width="370" />
-            <div class="section__label">
+          <li class="section-second__item">
+            <picture>
+              <source srcset="./images/jpg/service/box2.jpg 1x, ./images/jpg/service/box2@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <img class="section-second__img" src="./images/jpg/service/box2.jpg" alt="Вид услуги" width="370" />
+            </picture>
+            <div class="section-second__label">
               <p>Мобильные приложения</p>
             </div>
           </li>
-          <li class="section__item section__item--width">
-            <img class="section__img" src="./images/jpg/box3.jpg" alt="Вид услуги" width="370" />
-            <div class="section__label">
+          <li class="section-second__item">
+            <picture>
+              <source srcset="./images/jpg/service/box3.jpg 1x, ./images/jpg/service/box3@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <img class="section-second__img" src="./images/jpg/service/box3.jpg" alt="Вид услуги" width="370" />
+            </picture>
+            <div class="section-second__label">
               <p>Дизайнерские решения</p>
             </div>
           </li>
@@ -140,12 +183,20 @@
     </section>
 
 
-    <section class="section section--third">
+    <section class="section-third">
       <div class="container">
-        <h2 class="section__title">Наша команда</h2>
-        <ul class="section__feature">
-          <li class="section__employees">
-            <img class="section__img" src="./images/jpg/emp1.jpg" alt="Работник Игорь" width="270" />
+        <h2 class="section-third__title">Наша команда</h2>
+        <ul class="section-third__team">
+          <li class="section-third__employees">
+            <picture>
+              <source srcset="./images/jpg/emp/emp1-desk.jpg 1x, ./images/jpg/emp/emp1-desk@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <source srcset="./images/jpg/emp/emp1-tab.jpg 1x, ./images/jpg/emp/emp1-tab@2x.jpg 2x"
+                media="(min-width: 768px)" />
+              <source srcset="./images/jpg/emp/emp1-mob.jpg 1x, ./images/jpg/emp/emp1-mob@2x.jpg 2x"
+                media="(max-width: 767px)" />
+              <img class="section-third__img" src="./images/jpg/emp/emp1-mob.jpg" alt="Работник Игорь" width="450" />
+            </picture>
             <div class="employee">
               <h3 class="employee__name">Игорь Демьяненко</h3>
               <p class="employee__text">Product Designer</p>
@@ -181,8 +232,16 @@
               </ul>
             </div>
           </li>
-          <li class="section__employees">
-            <img class="section__img" src="./images/jpg/emp2.jpg" alt="Работник Ольга" width="270" />
+          <li class="section-third__employees">
+            <picture>
+              <source srcset="./images/jpg/emp/emp2-desk.jpg 1x, ./images/jpg/emp/emp2-desk@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <source srcset="./images/jpg/emp/emp2-tab.jpg 1x, ./images/jpg/emp/emp2-tab@2x.jpg 2x"
+                media="(min-width: 768px)" />
+              <source srcset="./images/jpg/emp/emp2-mob.jpg 1x, ./images/jpg/emp/emp2-mob@2x.jpg 2x"
+                media="(max-width: 767px)" />
+              <img class="section-third__img" src="./images/jpg/emp/emp2-mob.jpg" alt="Работник Ольга" width="450" />
+            </picture>
             <div class="employee">
               <h3 class="employee__name">Ольга Репина</h3>
               <p class="employee__text">Frontend Developer</p>
@@ -218,8 +277,16 @@
               </ul>
             </div>
           </li>
-          <li class="section__employees">
-            <img class="section__img" src="./images/jpg/emp3.jpg" alt="Работник Николай" width="270" />
+          <li class="section-third__employees">
+            <picture>
+              <source srcset="./images/jpg/emp/emp3-desk.jpg 1x, ./images/jpg/emp/emp3-desk@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <source srcset="./images/jpg/emp/emp3-tab.jpg 1x, ./images/jpg/emp/emp3-tab@2x.jpg 2x"
+                media="(min-width: 768px)" />
+              <source srcset="./images/jpg/emp/emp3-mob.jpg 1x, ./images/jpg/emp/emp3-mob@2x.jpg 2x"
+                media="(max-width: 767px)" />
+              <img class="section-third__img" src="./images/jpg/emp/emp3-mob.jpg" alt="Работник Николай" width="450" />
+            </picture>
             <div class="employee">
               <h3 class="employee__name">Николай Тарасов</h3>
               <p class="employee__text">Marketing</p>
@@ -255,8 +322,16 @@
               </ul>
             </div>
           </li>
-          <li class="section__employees">
-            <img class="section__img" src="./images/jpg/emp4.jpg" alt="Работник Михаил" width="270" />
+          <li class="section-third__employees">
+            <picture>
+              <source srcset="./images/jpg/emp/emp4-desk.jpg 1x, ./images/jpg/emp/emp4-desk@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <source srcset="./images/jpg/emp/emp4-tab.jpg 1x, ./images/jpg/emp/emp4-tab@2x.jpg 2x"
+                media="(min-width: 768px)" />
+              <source srcset="./images/jpg/emp/emp4-mob.jpg 1x, ./images/jpg/emp/emp4-mob@2x.jpg 2x"
+                media="(max-width: 767px)" />
+              <img class="section-third__img" src="./images/jpg/emp/emp4-mob.jpg" alt="Работник Михаил" width="450" />
+            </picture>
             <div class="employee">
               <h3 class="employee__name">Михаил Ермаков</h3>
               <p class="employee__text">UI Designer</p>
@@ -297,48 +372,48 @@
     </section>
 
 
-    <section class="section section--fourth">
+    <section class="section-fourth">
       <div class="container">
-        <h2 class="section__title">Постоянные клиенты</h2>
-        <ul class="section__clients">
-          <li class="section__item section__item--clients">
-            <a href="" class="section__link section__link--clients">
-              <svg width="106" height="60" class="section-svg">
+        <h2 class="section-fourth__title">Постоянные клиенты</h2>
+        <ul class="section-fourth__clients">
+          <li class="section-fourth__item">
+            <a href="" class="section-fourth__link">
+              <svg width="106" height="60" class="section-fourth__svg">
                 <use href="./images/clients.svg#icon-client1"></use>
               </svg>
             </a>
           </li>
-          <li class="section__item section__item--clients">
-            <a href="" class="section__link section__link--clients">
-              <svg width="106" height="60" class="section-svg">
+          <li class="section-fourth__item">
+            <a href="" class="section-fourth__link">
+              <svg width="106" height="60" class="section-fourth__svg">
                 <use href="./images/clients.svg#icon-client2"></use>
               </svg>
             </a>
           </li>
-          <li class="section__item section__item--clients">
-            <a href="" class="section__link section__link--clients">
-              <svg width="106" height="60" class="section-svg">
+          <li class="section-fourth__item">
+            <a href="" class="section-fourth__link">
+              <svg width="106" height="60" class="section-fourth__svg">
                 <use href="./images/clients.svg#icon-client3"></use>
               </svg>
             </a>
           </li>
-          <li class="section__item section__item--clients">
-            <a href="" class="section__link section__link--clients">
-              <svg width="106" height="60" class="section-svg">
+          <li class="section-fourth__item">
+            <a href="" class="section-fourth__link">
+              <svg width="106" height="60" class="section-fourth__svg">
                 <use href="./images/clients.svg#icon-client4"></use>
               </svg>
             </a>
           </li>
-          <li class="section__item section__item--clients">
-            <a href="" class="section__link section__link--clients">
-              <svg width="106" height="60" class="section-svg">
+          <li class="section-fourth__item">
+            <a href="" class="section-fourth__link">
+              <svg width="106" height="60" class="section-fourth__svg">
                 <use href="./images/clients.svg#icon-client5"></use>
               </svg>
             </a>
           </li>
-          <li class="section__item section__item--clients">
-            <a href="" class="section__link section__link--clients">
-              <svg width="106" height="60" class="section-svg">
+          <li class="section-fourth__item">
+            <a href="" class="section-fourth__link">
+              <svg width="106" height="60" class="section-fourth__svg">
                 <use href="./images/clients.svg#icon-client6"></use>
               </svg>
             </a>
@@ -355,10 +430,10 @@
         <div>
           <a href="" class="container__logo container__logo-footer">Web<span
               class="container__accent container__accent--footer">Studio</span></a>
-          <address>
+          <address class="footer__address">
             <ul class="footer__list">
               <li class="footer__item">
-                <a href="" class="footer__address">г. Киев, пр-т Леси Украинки, 26</a>
+                <a href="" class="footer__street">г. Киев, пр-т Леси Украинки, 26</a>
               </li>
               <li class="footer__item">
                 <a href="mailto:info@example.com" class="footer__contact">info@example.com</a>
@@ -413,7 +488,6 @@
       </form>
     </div>
   </footer>
-
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <form autocomplete="off">
@@ -448,11 +522,11 @@
           <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"
             class="modal__textarea"></textarea>
         </div>
-
         <div class="modal__field modal__field--checkbox">
-          <input type="checkbox" class="modal__checkbox" name="policy" id="policy" />
-          <span class="modal__icon"></span>
-          <label for="policy" class="modal__policy">Соглашаюсь с рассылкой и принимаю
+          <label for="policy" class="modal__policy">
+            <input type="checkbox" class="modal__checkbox" name="policy" id="policy" />
+            <span class="modal__icon"></span>
+            Соглашаюсь с рассылкой и принимаю
             <a href="" class="modal__conditions">Условия договора</a></label>
         </div>
 
@@ -460,14 +534,14 @@
       </form>
 
       <button class="modal__button-close" data-modal-close>
-        <svg width="11" height="11">
+        <svg class="modal__button-close-svg" width="11" height="11">
           <use href="./images/close-button.svg#icon-close-button"></use>
         </svg>
       </button>
     </div>
   </div>
-
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>
